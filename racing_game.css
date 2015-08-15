@@ -22,3 +22,12 @@ td{
 #car-image{
 
 }
+
+.btn {
+  background-color: white;
+  text-decoration: none;
+  border: 1px solid #777;
+  padding: 10px;
+  border-radius: 3px;
+}
+
