@@ -1,8 +1,22 @@
+body {
+	background-color: #ADD8E6;
+}
+
+h1 {
+	font-family: Helvetica;
+	font-size: 70px;
+}
+
 td{
 	border: 1px solid black;
 	width: 150px;
 	height: 150px;
 	background-color: gray;
+}
+
+.finishLine {
+	background-image: url("images/finishlinevertical.png");
+	margin: auto;
 }
 
 #car-image{
