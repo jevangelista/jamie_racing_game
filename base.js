@@ -30,12 +30,12 @@ $(document).keypress(function(action){
 //Will keep track of wins and say who won the round
 	if (counterPlayerOne == 9) {
 		playerOneWins += 1;
-		$('h2').append("<br/>" + "Player One wins!" + " Score: " + playerOneWins);
+		$('h2').append("<br/>" + "Player One wins!");
 		alert("You go Player One!");
 
 	} else if (counterPlayerTwo == 9) {
 		playerTwoWins += 1;
-		$('h2').append("<br/>" + "Player Two wins!" + " Score: " + playerOneWins);
+		$('h2').append("<br/>" + "Player Two wins!");
 		alert("You go Player Two!");
 	}
 
@@ -43,18 +43,3 @@ $(document).keypress(function(action){
 
 	
 })
-
-/**
-console.log("Sanity Check: JS is working!");
-
-$(document).ready(function(){
-
-$("span").on("click", function handleClick(event){
-   var text = $(this).text();
-   console.log(text);
-   $('ul').append("<li>" + text + "</li>");
-   
-});
-
-})
-*/

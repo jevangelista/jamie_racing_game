@@ -1,5 +1,5 @@
 body {
-	background-color: #ADD8E6;
+	background-color: #79C879;
 }
 
 h1 {
@@ -7,12 +7,24 @@ h1 {
 	font-size: 70px;
 }
 
+table {
+	background-color: #939393;
+}
+
 td{
-	border: 1px solid black;
 	width: 150px;
 	height: 150px;
-	background-color: gray;
+	margin: auto;
+	background-color: #939393;
+	background-image: url("images/racetrack.png");
+	
 }
+
+hr {
+	border-top: dotted 1px #ff0000;
+
+}
+
 
 .finishLine {
 	background-image: url("images/finishlinevertical.png");
@@ -20,7 +32,7 @@ td{
 }
 
 #car-image{
-
+	width: 150px;
 }
 
 .btn {
