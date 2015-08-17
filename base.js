@@ -1,5 +1,3 @@
-console.log("Sanity Check: JS is working!");
-
 //Initializes counter for playerOne and playerTwo
 var counterPlayerOne = 0;
 var counterPlayerTwo = 0;
@@ -27,7 +25,7 @@ $(document).keypress(function(action){
 		counterPlayerTwo = (counterPlayerTwo + 1)
 	}
 
-//Will keep track of wins and say who won the round
+//Will allow player to win and say who won the round
 	if (counterPlayerOne == 9) {
 		playerOneWins += 1;
 		$('h2').append("<br/>" + "Player One wins!");
@@ -42,4 +40,26 @@ $(document).keypress(function(action){
 
 
 	
+})
+
+
+// Shows winning time displayed on board
+var startTime; // undefined
+var endTime; // undefined
+var total; // undefined
+
+$(document).ready(function(){
+
+  $(window).on("keypress", function handleKeypress(event){
+
+    if ( startTime ) {
+      endTime = Date.now();
+      total = (endTime - startTime) / 1000;
+      $("#total-time").text( total + " seconds" )
+    } else {
+      startTime = Date.now();
+    }
+
+  })
+
 })
