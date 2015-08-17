@@ -6,10 +6,10 @@ var playerTwoWins = 0;
 
 
 //Function triggers a move when keyboard button is pressed
-$(document).keypress(function(action){
+$(document).keypress(function(move){
 
 //Triggers playerOne to move when "1" is pressed
-	if (action.which == 49) {
+	if (move.which == 49) {
 		var playerOne = $("#playerOne");
 		$("#playerOne").remove();
 		var $newBlock = $(".block").eq(counterPlayerOne + 1);
@@ -17,7 +17,7 @@ $(document).keypress(function(action){
 		counterPlayerOne = (counterPlayerOne + 1);
 
 //Triggers playerTwo to move when "0" is pressed		
-	} else if (action.which == 48) {
+	} else if (move.which == 48) {
 		var playerTwo = $("#playerTwo");
 		$("#playerTwo").remove();
 		var $newBlock2 = $(".block2").eq(counterPlayerTwo + 1);
@@ -25,7 +25,7 @@ $(document).keypress(function(action){
 		counterPlayerTwo = (counterPlayerTwo + 1)
 	}
 
-//Will allow player to win and say who won the round
+//Takes position from previous condition. Once player reaches end of track, this conditional will allow player to win and display who won the round.
 	if (counterPlayerOne == 9) {
 		playerOneWins += 1;
 		$('h2').append("<br/>" + "Player One wins!");
